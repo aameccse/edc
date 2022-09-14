@@ -31,7 +31,16 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({url: "demo_test.txt", success: function(result){
+      $("#div1").html(result);
+    }});
+  });
+});
+</script>
 </head>
 
 <body>
@@ -145,9 +154,7 @@
                   <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
         </nav>
 
-        <p>
-          Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-        </p>
+       <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
       </div>
       </a>
     </div>
