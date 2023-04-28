@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+    $.ajax({url: "https://sornaakarshanabhiravar.org/test.php", beforeSend: function() {
+              $("#loading-image").show();
+           },success: function(result){
+	    
+      $("#div1").html(result);
+// 	    alert(result);
+    }});
+  
+});
+</script>
+</head>
+
+<body>
+  
+  
+
+ 
+  
+  <footer class="site-footer">
+
+<div id="div1"> <img id="loading-image" src="https://c.tenor.com/wpSo-8CrXqUAAAAi/loading-loading-forever.gif" style="display:none;"/></div>
+  </footer>
+ 
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
